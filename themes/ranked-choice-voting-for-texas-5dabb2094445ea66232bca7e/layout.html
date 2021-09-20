@@ -65,7 +65,7 @@
 
             {% if site.has_meta_image? %}
               <div class="site-logo clearfix">
-                <header><a href="/"><img src="{{ site.meta_image_url }}"></a></header>
+                <header><a href="/"><img src="{{ site.meta_image_url }}" alt="{{ site.name }}" /></a></header>
               </div>
             {% else %}
               <header class="header-no-logo">
@@ -214,7 +214,7 @@
 
             <footer class="clearfix">
 
-              <p class="sitename"><a href="/">{{ site.name }}</a></p>
+              <p class="sitename"><a href="/"><img src="{{ site.meta_image_url }}" alt="{{ site.name }}" /></a></p>
 
               {{ content_for_footer }}
 
@@ -360,4 +360,3 @@
 
 </body>
 </html>
-
